@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ListBox x:Name="lst_Cd" Margin="24,57,514,29" SelectionChanged="lst_Cd_SelectionChanged"/>
+        <Label Content="CD" HorizontalAlignment="Left" Margin="24,26,0,0" VerticalAlignment="Top" Width="262"/>
+        <Label Content="TITOLO" HorizontalAlignment="Left" Margin="311,57,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txt_Titolo" HorizontalAlignment="Left" Margin="311,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="AUTORE" HorizontalAlignment="Left" Margin="311,134,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txt_Autore" HorizontalAlignment="Left" Margin="311,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="DURATA (s)" HorizontalAlignment="Left" Margin="311,213,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txt_Durata" HorizontalAlignment="Left" Margin="311,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_Aggiungi" Content="AGGIUNGI" HorizontalAlignment="Left" Margin="311,282,0,0" VerticalAlignment="Top" Height="27" Width="120" Click="btn_Aggiungi_Click"/>
+        <Button x:Name="btn_Modifca" Content="MODIFICA" HorizontalAlignment="Left" Margin="311,330,0,0" VerticalAlignment="Top" Height="27" Width="120" Click="btn_Modifca_Click"/>
+        <Button x:Name="btn_Elimina" Content="ELIMINA" HorizontalAlignment="Left" Margin="311,378,0,0" VerticalAlignment="Top" Height="27" Width="120" Click="btn_Elimina_Click"/>
+        <Button x:Name="btn_ShortSong" Content="VERIFICA SHORT SONG" HorizontalAlignment="Left" Margin="478,57,0,0" VerticalAlignment="Top" Width="178" Height="35" Click="btn_ShortSong_Click"/>
+        <Label x:Name="lbl_Frase" Content="QUALE DURATA NON DEVE SUPERARE IL TUO BRANO?" HorizontalAlignment="Left" Margin="478,97,0,0" VerticalAlignment="Top" Width="312"/>
+        <TextBox x:Name="txt_DurataVerifica" HorizontalAlignment="Left" Margin="478,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_Conferma" Content="CONFERMA" HorizontalAlignment="Left" Margin="478,149,0,0" VerticalAlignment="Top" Height="29" Width="120" Click="btn_Conferma_Click"/>
+        <Label x:Name="lbl_Risposta" Content="RISPOSTA:" HorizontalAlignment="Left" Margin="478,195,0,0" VerticalAlignment="Top" Width="202"/>
 
     </Grid>
 </Window>
