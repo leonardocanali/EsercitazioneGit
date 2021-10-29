@@ -40,9 +40,17 @@ namespace EsercitazioneGit
             lbl_Frase.Visibility = Visibility.Hidden;
             btn_Conferma.Visibility = Visibility.Hidden;
             lbl_Risposta.Visibility = Visibility.Hidden;
-
+            PopulaLista();
         }
 
+        private void PopulaLista()
+        {
+            lst_Cd.Items.Clear();
+            foreach(Brano b in brani)
+            {
+                lst_Cd.Items.Add(b);
+            }
+        }
         private void lst_Cd_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             btn_Aggiungi.IsEnabled = false;
