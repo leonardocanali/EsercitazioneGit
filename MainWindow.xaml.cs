@@ -28,7 +28,7 @@ namespace EsercitazioneGit
             Brano b = new Brano("WAKA WAKA", "SHAKIRA", 240);
             Brano b1 = new Brano("LEGGINS DI PELLE", "BELLO FIGO", 180);
             Brano b2 = new Brano("CAN'T SAY", "TRAVIS SCOTT", 200);
-
+            //
             brani = new List<Brano>();
 
             brani.Add(b);
