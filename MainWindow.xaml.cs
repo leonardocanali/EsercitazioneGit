@@ -48,7 +48,7 @@ namespace EsercitazioneGit
             btn_Aggiungi.IsEnabled = false;
             Brano b = lst_Cd.SelectedItem as Brano;
             txt_Autore.Text = b.Autore;
-            txt_Durata.Text = int.Parse(b.Durata);
+            txt_Durata.Text = Convert.ToString(b.Durata);
             txt_Titolo.Text = b.Titolo;
         }
 
